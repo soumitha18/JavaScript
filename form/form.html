@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale = 1.0">
+        <title>Student Form</title>
+        <style>
+            h1{
+                color: rgb(209, 115, 115);
+                text-align: center;
+            }
+            .formDiv{
+                text-align: center;
+            }
+            .form{
+                display: flex;
+                flex-direction: column;
+                height: 150px;
+            }
+            .form > *{
+                flex: 1;
+            }
+            #submit{
+                width: 100px;
+                background-color: rgb(209, 115, 115);
+                border: 1px solid rgb(209, 115, 115);
+                color: white;
+                margin-left: 47%;
+            }
+            #result{
+                margin: 6%;
+            }
+            #result > * > *{
+                display: flex;
+            }
+            #result > * > * > *{
+                flex: 1;
+            }
+            .header{
+                display: flex;
+            }
+            .header > *{
+                flex: 1;
+            }
+            button{
+                background-color: rgb(209, 115, 115);
+                border: 1px solid rgb(209, 115, 115);
+                color: white;
+                padding: 0.5%;
+            }
+            #dec{
+                margin-left: 35%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Student Form</h1>
+        <div class="formDiv">
+            <form class="form">
+                <label>Name : 
+                    <input name="Name">
+                </label>
+                <label>Subject1 : 
+                    <input name="Subject1">
+                </label>
+                <label>Subject2 : 
+                    <input name="Subject2">
+                </label>
+                <label>Subject3 : 
+                    <input name="Subject3">
+                </label>
+                <input id="submit" type="submit"/>
+            </form>
+
+        </div>
+        <div id="result">
+    
+
+        </div>
+        <button id="dec">Click to get High to Low</button>
+        <button id="ace">Click to get Low to High</button>
+
+        <script type="text/javascript" src="form.js"></script>
+    </body>
+</html>
